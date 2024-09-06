@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f5deb3;
+    border-radius: 50px;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    z-index: 5;
+}
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+header .logo h6 {
+    font-family: 'Trebuchet MS';
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-shadow: 4px 4px 2px #f5deb358;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding-right: 20px;
+}
+header nav ul li a {
+    font-size: 1.4reme;
+    color: wheat;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(49, 66, 64, 0.511);
+    font-weight: 600;
+}
+header nav ul li .home {
+    background-color: rgba(49, 66, 64, 0.511);
+    color: wheat;
+}
+
+header nav ul li a:hover {
+    box-shadow: 0 0 5px #f5deb3;
+    color: #f5deb3;
+    font-weight: 600;
+}
+
+
+/* ###################### section part ######################## */
+
+section {
+    width: 100%;
+    height: 655px;
+    background: url(imgs-P2/pexels-anntarazevich-5910953.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+section .card {
+    width: 600px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin-right: 40px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 45px;
+    transition: .4s;
+    margin-top: 40px;
+}
+section .card:hover {
+    box-shadow: 0 0 15px black;
+}
+section .card h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: system-ui;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+section .card p {
+    font-size: 1.25rem;
+    color: rgb(211, 211, 211);
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    line-height: 160%;
+    font-weight: 600;
+}
+section .card hr {
+    width: 100%;
+    height: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* ######################## part about ######################## */
+
+.about{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 87, 87, 0.837);
+    z-index: 100;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.about .box{
+    width: 80%;
+    height: 500px;
+    background-color: black;
+    padding: 40px;
+    border-radius: 20px;
+}
+.about .box h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: wheat;
+    font-family: sans-serif;
+}
+.about .box p{
+    color: rgba(255, 255, 255, 0.751);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    line-height: 140%;
+}
+.about .box i {
+    color: #f5deb3;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+/* ##################### footer part ###################### */
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+    background-color: rgb(21, 25, 32);
+}
+footer .left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+footer .left h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+footer .left p {
+    color: rgb(156, 156, 156);
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom:20px;
+}
+footer .left ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+footer .left ul li {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.416);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .left ul li a {
+    color: wheat;
+    font-size: 1.3rem;
+}
+footer .left ul li:hover {
+    background-color: black;
+    box-shadow: 0 0 5px wheat;
+}
+
+
+footer .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer .right :where(.b1 , .b2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 20px 20px 3px black;
+    border-radius: 15px 0 15px 0;
+    width: 160px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    transition: .8s;
+}
+footer .right :where(.b1, .b2):hover {
+    box-shadow: 20px 20px 3px wheat;
+}
+footer .right :where(.b1, .b2) i {
+    color: wheat;
+    font-size: 1.5rem;
+}
+footer .right :where(.b1, .b2) h5 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+}

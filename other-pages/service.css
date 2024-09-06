@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f5deb3;
+    border-radius: 50px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    z-index: 2;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+header .logo h6 {
+    font-family: 'Trebuchet MS';
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-shadow: 4px 4px 2px #ebeaea52;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding-right: 20px;
+}
+
+header nav ul li a {
+    font-size: 1.4reme;
+    color: wheat;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(49, 66, 64, 0.511);
+    font-weight: 600;
+}
+
+header nav ul li .home {
+    background-color: rgba(49, 66, 64, 0.511);
+    color: wheat;
+}
+
+
+
+header nav ul li a:hover {
+    box-shadow: 0 0 5px #f5deb3;
+    color: #f5deb3;
+    font-weight: 600;
+} 
+
+
+/* ###################### section part ######################### */
+section {
+    width: 100%;
+    height: 655px;
+    padding-top: 200px;
+    z-index: 3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 160px 50px 0;
+    background: url(../imgs-P2/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 4px 2px #f5deb351;
+    margin-bottom: 20px;
+}
+section p {
+    font-size: 1.4rem;
+    color: black;
+    text-shadow: 1px 1px 2px #f5deb395;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 800;
+    backdrop-filter: blur(2px);
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+section .buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+section .buttons a {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-shadow: 4px 4px 2px #f5deb34a;
+    padding: 20px 80px;
+    box-shadow: 10px 10px 5px grey;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+section .buttons a:hover {
+    color: #f5deb3;
+    box-shadow: 10px 10px 5px #f5deb3;
+    text-shadow: 1px 1px 1px #f5deb34c;
+}
+
+
+/* ###################### footer ###################### */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+    background-color: rgb(21, 25, 32);
+}
+
+footer .left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+footer .left h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+footer .left p {
+    color: rgb(156, 156, 156);
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+footer .left ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+footer .left ul li {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.416);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer .left ul li a {
+    color: wheat;
+    font-size: 1.3rem;
+}
+
+footer .left ul li:hover {
+    background-color: black;
+    box-shadow: 0 0 5px wheat;
+}
+
+
+footer .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .right :where(.b1, .b2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 20px 20px 3px black;
+    border-radius: 15px 0 15px 0;
+    width: 160px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    transition: .8s;
+}
+
+footer .right :where(.b1, .b2):hover {
+    box-shadow: 20px 20px 3px wheat;
+}
+
+footer .right :where(.b1, .b2) i {
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+footer .right :where(.b1, .b2) h5 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+}
